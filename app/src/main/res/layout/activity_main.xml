@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.project.MainActivity"
+    android:background="@drawable/bb">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_marginTop="24dp"
+        android:id="@+id/txt1"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_below="@+id/editText"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/txt2"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_alignTop="@+id/txt1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:text="Team A"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_alignRight="@+id/btna1"
+        android:layout_alignEnd="@+id/btna1"
+        android:textColor="#b41e1e" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="Team B"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="#b41e1e" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Point"
+        android:id="@+id/btna1"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/txt1"
+        android:layout_alignRight="@+id/btna3"
+        android:layout_alignEnd="@+id/btna3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#132da3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Point"
+        android:id="@+id/btna2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btna1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#132da3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:id="@+id/btna3"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/btna2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/btna2"
+        android:layout_alignEnd="@+id/btna2"
+        android:textColor="#132da3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3 Point"
+        android:id="@+id/btnb1"
+        android:layout_alignTop="@+id/btna1"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:textColor="#132da3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2 Point"
+        android:id="@+id/btnb2"
+        android:layout_above="@+id/btna3"
+        android:layout_alignLeft="@+id/btnb1"
+        android:layout_alignStart="@+id/btnb1"
+        android:textColor="#132da3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:id="@+id/btnb3"
+        android:layout_alignTop="@+id/btna3"
+        android:layout_alignLeft="@+id/btnb2"
+        android:layout_alignStart="@+id/btnb2"
+        android:layout_alignRight="@+id/btnb2"
+        android:layout_alignEnd="@+id/btnb2"
+        android:textColor="#132da3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/btnc"
+        android:layout_below="@+id/btna3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColor="#e8a711" />
+
+</RelativeLayout>
